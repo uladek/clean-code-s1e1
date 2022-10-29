@@ -1,9 +1,10 @@
 /* Basic Style */
-body {
-    background-color: #f8f8f8;
-    color: #333;
-    font-family: lato, sans-serif;
+.page {
+  background-color: #f8f8f8;
+  color: #333;
+  font-family: lato, sans-serif;
   }
+
   .urgent-matrix {
     width: 500px;
     margin: 0 auto;
@@ -11,11 +12,11 @@ body {
     text-align: right;
   }
   
-  .urgent-matrix img {
+  .matrix-img {
     width: 100%;
   }
   
-  .urgent-matrix .more-info {
+ .more-info {
     font-family: fantasy, cursive;
   }
   
@@ -54,7 +55,7 @@ body {
     outline:none;
   }
   
-  button {
+  .btn {
     background: none;
     border: 0px;
     color: #888;
@@ -62,14 +63,19 @@ body {
     width: 60px;
     font-family: lato, sans-serif;
     cursor: pointer;
+    /* outline:none; */
   }
   
-  button:hover {
+ .btn:hover {
     color: #3a3A3a;
   }
   /* Heading */
-  h3,
-  label[for='new-task'] {
+  /* h3, */
+ 
+  .title-task,
+  /* label[for='new-task'] */
+  .label-new-task
+   {
     color: #333;
     font-weight: 700;
     font-size: 15px;
@@ -78,8 +84,14 @@ body {
     margin: 0;
     text-transform: uppercase;
   }
+
+  .task-row-wrapper{
+  margin-top: 20px;
+
+  }
   
-  input[type="text"] {
+  /* input[type="text"] */
+  .imput-text {
     margin: 0;
     font-size: 18px;
     line-height: 18px;
@@ -92,19 +104,20 @@ body {
     color: #888;
   }
   
-  input[type="text"]:focus {
+  .imput-text:focus {
     color: #333;
   }
   
   /* New Task */
-  label[for='new-task'] {
+  /* label[for='new-task'] */
+  .label-task {
     display: block;
     margin: 0 0 20px;
   }
   
-  input#new-task {
+  /* input#new-task {
      width: 318px;
-  }
+  } */
   
   /* Task list */
   li {
