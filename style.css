@@ -4,28 +4,28 @@ body {
     color: #333;
     font-family: lato, sans-serif;
   }
-  .aaa {
+  .urgent-matrix {
     width: 500px;
     margin: 0 auto;
     display: block;
     text-align: right;
   }
   
-  .aaa img {
+  .urgent-matrix img {
     width: 100%;
   }
   
-  .aaa .more-info {
+  .urgent-matrix .more-info {
     font-family: fantasy, cursive;
   }
   
   @media (max-width:768px) {
-    .aaa {
+    .urgent-matrix {
       text-align: center;
     }
   
   }
-  .centered-main-page-element {
+  .task-wrapper {
     display: block;
     width: 500px;
     margin: 0 auto 0;
