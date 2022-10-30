@@ -53,7 +53,7 @@ var createNewTaskElement=function(taskString){
     deleteButton.className = "btn delete";
     deleteButtonImg.src='./remove.svg';
     deleteButton.appendChild(deleteButtonImg);
-
+   
 
     //and appending.
     listItem.appendChild(checkBox);
@@ -112,8 +112,6 @@ var editTask=function(){
     //toggle .editmode on the parent.
     listItem.classList.toggle("edit-mode");
    
-   
-  
 };
 
 
@@ -125,18 +123,27 @@ var deleteTask=function(){
     var ul=listItem.parentNode;
     //Remove the parent list item from the ul.
     ul.removeChild(listItem);
+  
 
 }
 
 
 //Mark task completed
-var taskCompleted=function(){
+var taskCompleted = function () {
     console.log("Complete Task...");
+  
 
     //Append the task list item to the #completed-tasks
     var listItem=this.parentNode;
     completedTasksHolder.appendChild(listItem);
+    // completedTasksHolder.appendChild(label);
+
+ 
+  
+
     bindTaskEvents(listItem, taskIncomplete);
+    // listItem.className="task li-label completed-label";
+  
 
 }
 
@@ -149,12 +156,14 @@ var taskIncomplete=function(){
     var listItem=this.parentNode;
     incompleteTaskHolder.appendChild(listItem);
     bindTaskEvents(listItem,taskCompleted);
+   
 }
 
 
 
 var ajaxRequest=function(){
     console.log("AJAX Request");
+ 
 }
 
 //The glue to hold it all together.
@@ -180,6 +189,9 @@ var bindTaskEvents=function(taskListItem,checkBoxEventHandler){
     deleteButton.onclick=deleteTask;
     //Bind taskCompleted to checkBoxEventHandler.
     checkBox.onchange=checkBoxEventHandler;
+  
+   
+   
 }
 
 //cycle over incompleteTaskHolder ul list items
@@ -188,6 +200,7 @@ for (var i=0; i<incompleteTaskHolder.children.length;i++){
 
     //bind events to list items chldren(tasksCompleted)
     bindTaskEvents(incompleteTaskHolder.children[i],taskCompleted);
+   
 }
 
 
@@ -197,6 +210,7 @@ for (var i=0; i<incompleteTaskHolder.children.length;i++){
 for (var i=0; i<completedTasksHolder.children.length;i++){
     //bind events to list items chldren(tasksIncompleted)
     bindTaskEvents(completedTasksHolder.children[i],taskIncomplete);
+
 }
 
 
