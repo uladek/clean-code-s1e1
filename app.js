@@ -107,11 +107,6 @@ var editTask=function(){
     }else{
         editInput.value=label.innerText;
         editBtn.innerText="Save";
-  
-        // label.classList.toggle("label-task edit-label");
-        // editInput.classList.toggle("edit-mode-text");
-
-
     }
 
     //toggle .editmode on the parent.
