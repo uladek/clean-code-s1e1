@@ -120,7 +120,8 @@
   } */
   
   /* Task list */
-  li {
+  /* li */
+  .li-item {
     overflow: hidden;
     padding: 20px 0;
     border-bottom: 1px solid #eee;
@@ -130,9 +131,9 @@
     align-items: center;
   }
   
-  li > * {
+  /* li > * {
     vertical-align: middle;
-  }
+  } */
   
   li > input[type="checkbox"] {
     margin: 0 10px;
@@ -145,7 +146,7 @@
    width: 226px;
   }
   
-  li >   input[type="text"] {
+  li >   .imput-text {
     width: 226px
   }
   button.delete img {
