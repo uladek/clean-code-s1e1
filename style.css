@@ -1,4 +1,4 @@
-/* Basic Style */
+Basic Style
 .page {
   background-color: #f8f8f8;
   color: #333;
@@ -147,7 +147,7 @@ input,button{
   /* .li-item >  .imput-text */
 .li-imput-text {
   display: none;
-  width: 226px
+  width: 226px;
 }
   /* button.delete img  */
 .img-delete{
@@ -163,8 +163,10 @@ input,button{
   
   /* Completed */
   /* ul.completed-tasks label  */
-.completed-label {
-  text-decoration: line-through
+
+/* .completed-label */
+.completed-tasks .li-label {
+  text-decoration: line-through;
   color: #888;
 }
   
@@ -178,14 +180,15 @@ input,button{
   /* ul  .li-item.edit-mode input[type=text]  */
 
  /* .edit-mode  .li-imput-text */
-.edit-mode-text {
+.edit-mode-text{
   display: inline-block;
-  width: 224px
+  width: 224px;
 }
   
   /* ul  .li-item.edit-mode label */
-  /* ul  .edit-mode  .li-label */
+  /* ul  .edit-mode .li-label */
  /* .edit-mode  .li-label  */
-.edit-label{
+.edit-label
+{
   display: none;
 }
