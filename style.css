@@ -150,6 +150,7 @@
   
   /* .li-item >  .imput-text */
   .li-imput-text {
+    display: none;
     width: 226px
   }
   /* button.delete img  */
@@ -165,26 +166,31 @@
   }
   
   /* Completed */
-  ul.completed-tasks label {
+  /* ul.completed-tasks label  */
+  .completed-label {
     text-decoration: line-through
     color: #888;
   }
   
   /* Edit Task */
   /* ul  .li-item input[type=text]  */
-  ul  .li-imput-text{
+  /* ul  .li-imput-text */
+/* .li-imput-text{
     display:none
-  }
+  } */
   
   /* ul  .li-item.edit-mode input[type=text]  */
-  ul .edit-mode  .li-imput-text
-  {
+
+ /* .edit-mode  .li-imput-text */
+ .edit-mode-text {
     display:inline-block;
     width:224px
   }
   
   /* ul  .li-item.edit-mode label */
-  ul  .edit-mode  .li-label
-   {
+  /* ul  .edit-mode  .li-label */
+
+ /* .edit-mode  .li-label  */
+ .edit-label{
     display:none;
   }
