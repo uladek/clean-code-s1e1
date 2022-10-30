@@ -1,4 +1,4 @@
-Basic Style
+/* Basic Style */
 .page {
   background-color: #f8f8f8;
   color: #333;
@@ -123,7 +123,6 @@ input,button{
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
-  
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -138,7 +137,7 @@ input,button{
 }
   
   /* .li-item > label */
-.li-label{
+.li-label {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
@@ -150,14 +149,14 @@ input,button{
   width: 226px;
 }
   /* button.delete img  */
-.img-delete{
+.img-delete {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
   
   /* button.delete img:hover */
-.img-delete:hover{
+.img-delete:hover {
   transform: rotateZ(0);
 }
   
@@ -180,7 +179,7 @@ input,button{
   /* ul  .li-item.edit-mode input[type=text]  */
 
  /* .edit-mode  .li-imput-text */
-.edit-mode-text{
+.edit-mode-text {
   display: inline-block;
   width: 224px;
 }
@@ -188,7 +187,6 @@ input,button{
   /* ul  .li-item.edit-mode label */
   /* ul  .edit-mode .li-label */
  /* .edit-mode  .li-label  */
-.edit-label
-{
+.edit-label {
   display: none;
 }
