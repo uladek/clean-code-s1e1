@@ -21,7 +21,7 @@
       <label class = "label-new-task" for="new-task">
       </label>
         <div class="task-row-wrapper">
-          <input  class="task new-imput-task imput-text" type="text">
+          <input  class="task new-imput-task imput-text " type="text">
           <!-- <input id="new-task" class="task" type="text"> -->
 
           <button class="brn">Add</button>
@@ -33,15 +33,15 @@
     <ul class="to-do-tasks">
     <!-- <ul id="incompleteTasks"></ul> -->
       <li class ="li-item">
-        <input type='checkbox'>
-        <label class="task">Pay Bills</label>
+        <input class="imput-checkbox" type='checkbox'>
+        <label class="task li-label">Pay Bills</label>
         <input type="text" class="task imput-text">
         <button class="btn edit">Edit</button>
         <button class="btn delete"><img src="./remove.svg"></button>
       </li>
       <li class="edit-mode li-item">
-        <input type="checkbox">
-        <label class="task label-task">Go Shopping</label>
+        <input class="imput-checkbox"  type="checkbox">
+        <label class="task label-task .li-label">Go Shopping</label>
         <input type="text" value="Go Shopping" class="task imput-text">
         <button class="btn edit">Save</button>
         <button class="btn delete">
@@ -54,8 +54,8 @@
       <ul class="completed-tasks">
       <!-- <ul id="completed-tasks"> -->
         <li class ="li-item">
-          <input type="checkbox" checked>
-          <label class="task label-task">See the Doctor</label>
+          <input  class="imput-checkbox" type="checkbox" checked>
+          <label class="task label-task  li-label">See the Doctor</label>
           <input type="text" class="task imput-text">
           <button class="btn btn-edit edit">Edit</button>
           <button class="btn btn-delete delete">
