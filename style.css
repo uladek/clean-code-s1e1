@@ -16,7 +16,7 @@
   width: 100%;
 }
   
-.urgent_matrix__more_info{
+.urgent_matrix__more_info {
   font-family: fantasy, cursive;
 }
   
@@ -28,7 +28,7 @@
   
 }
 
-.task-wrapper {
+.task_wrapper {
   display: block;
   width: 500px;
   margin: 0 auto 0;
@@ -40,7 +40,7 @@
   flex-grow: 1;
 }
   
-.task-row-wrapper {
+.task_wrapper__task_row_wrapper {
   display: flex;
 }
   
@@ -74,7 +74,8 @@ input, button {
   /* Heading */
   /* h3, */
   /* label[for='new-task'] */
-.title-task,
+.task_wrapper__title_task,
+.task_title,
 .label-new-task {
   color: #333;
   font-weight: 700;
@@ -85,12 +86,11 @@ input, button {
   text-transform: uppercase;
 }
 
-.add-item {
+.task_wrapper__add_item {
     margin-top: 20px;
-
 }
 
-.task-row-wrapper{
+.task_wrapper__task_row_wrapper {
   margin-top: 20px;
 }
   
