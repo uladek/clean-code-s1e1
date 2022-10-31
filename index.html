@@ -7,16 +7,18 @@
 
 <body class="page">
 
-  <div class="urgent-matrix">
-    <img class="matrix-img" src="./eisenhower-matrix.jpg">
-    <a class="more-info"
+  <header class="urgent-matrix">
+    <img class="matrix-img"
+     src="./eisenhower-matrix.jpg">
+       <a class="more-info"
          href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
-  </div>
+  </header>
 
-  <div class="task-wrapper">
+  <main class="task-wrapper">
   <!-- <div class="centered-main-page-element"> -->
-    <p class="empty-section"></p>  
+    <section class="add-item">  
     <!-- <p id="top-section-for-adding-element-to-list"> -->
+     
         <h3 class="title-task first-title">Add Item</h3>
       <label class = "label-new-task" for="new-task">
       </label>
@@ -26,45 +28,50 @@
 
           <button class="brn">Add</button>
         </div>
-    </p>
+    </section>
     
-    <h3 class="title-task">Todo</h3>
+    <sectiom class="to-do">
 
-    <ul class="to-do-tasks">
+      <h3 class="title-task">Todo</h3>
+
+      <ul class="to-do-tasks">
     <!-- <ul id="incompleteTasks"></ul> -->
-      <li class ="li-item">
-        <input class="imput-checkbox" type='checkbox'>
-        <label class="task li-label">Pay Bills</label>
-        <input type="text" class="task imput-text li-imput-text">
-        <button class="btn edit">Edit</button>
-        <button class="btn delete">
-            <img class="img-delete" src="./remove.svg"></button>
-      </li>
-      <li class="edit-mode li-item">
-        <input type="checkbox" class="imput-checkbox">
-        <label class="task label-task li-label edit-label">Go Shopping</label>
-        <input type="text" value="Go Shopping" class="task imput-text li-imput-text edit-mode-text">
-        <button class="btn edit">Save</button>
-        <button class="btn delete">
-            <img class="img-delete" src="./remove.svg">
-        </button>
-      </li>
-    </ul>
-
-    <h3 class="title-task">Completed</h3>
-      <ul class="completed-tasks">
-      <!-- <ul id="completed-tasks"> -->
         <li class ="li-item">
-          <input  class="imput-checkbox" type="checkbox" checked>
-          <label class="task li-label completed-label">See the Doctor</label>
+          <input class="imput-checkbox" type='checkbox'>
+          <label class="task li-label">Pay Bills</label>
           <input type="text" class="task imput-text li-imput-text">
-          <button class="btn btn-edit edit">Edit</button>
-          <button class="btn btn-delete delete">
-            <img class="img-delete" src="./remove.svg">
+          <button class="btn edit">Edit</button>
+          <button class="btn delete">
+              <img class="img-delete" src="./remove.svg"></button>
+        </li>
+        <li class="edit-mode li-item">
+          <input type="checkbox" class="imput-checkbox">
+          <label class="task label-task li-label edit-label">Go Shopping</label>
+          <input type="text" value="Go Shopping" class="task imput-text li-imput-text edit-mode-text">
+          <button class="btn edit">Save</button>
+          <button class="btn delete">
+              <img class="img-delete" src="./remove.svg">
           </button>
         </li>
       </ul>
-  </div>
+    </sectiom>
+
+    <section class="completed">
+      <h3 class="title-task">Completed</h3>
+        <ul class="completed-tasks">
+      <!-- <ul id="completed-tasks"> -->
+          <li class ="li-item">
+            <input  class="imput-checkbox" type="checkbox" checked>
+            <label class="task li-label completed-label">See the Doctor</label>
+            <input type="text" class="task imput-text li-imput-text">
+            <button class="btn btn-edit edit">Edit</button>
+            <button class="btn btn-delete delete">
+              <img class="img-delete" src="./remove.svg">
+            </button>
+          </li>
+        </ul>
+      </section>
+    </main>
   
 <script src="app.js"></script>
 </body>
