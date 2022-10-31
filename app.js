@@ -123,7 +123,6 @@ var deleteTask=function(){
     var ul=listItem.parentNode;
     //Remove the parent list item from the ul.
     ul.removeChild(listItem);
-  
 
 }
 
@@ -136,15 +135,9 @@ var taskCompleted = function () {
     //Append the task list item to the #completed-tasks
     var listItem=this.parentNode;
     completedTasksHolder.appendChild(listItem);
-    // completedTasksHolder.appendChild(label);
-
- 
-  
 
     bindTaskEvents(listItem, taskIncomplete);
-    // listItem.className="task li-label completed-label";
   
-
 }
 
 
