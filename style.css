@@ -1,28 +1,28 @@
 /* Basic Style */
-.page {
+.body_page{
   background-color: #f8f8f8;
   color: #333;
   font-family: Lato, sans-serif;
 }
 
-.urgent_matrix {
+.header  {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
   
-.urgent_matrix__img {
+.header__img {
   width: 100%;
 }
   
-.urgent_matrix__more_info {
+.header__more_info {
   font-family: fantasy, cursive;
 }
   
 @media (max-width:768px) {
 
-  .urgent_matrix {
+  .header {
     text-align: center;
   }
   
@@ -71,9 +71,9 @@ input, button {
   color: #3a3A3a;
 }
   /* Heading */
-.task_wrapper__title_task,
+.task_wrapper__add_item__title_task,
 .task_title,
-.label-new-task {
+.task_wrapper__label_new_task {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -90,8 +90,17 @@ input, button {
 .task_wrapper__task_row_wrapper {
   margin-top: 20px;
 }
+
+
+.li-imput-text {
+  display: none;
+  width: 226px;
+}
   
 .imput-text {
+  /* display: none;
+  width: 226px; */
+  /* width: 226px; */
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -104,7 +113,7 @@ input, button {
   color: #888;
 }
   
-.imput-text:focus {
+.imput_text:focus {
   color: #333;
 }
   
@@ -134,10 +143,7 @@ input, button {
   width: 226px;
 }
 
-.li-imput-text {
-  display: none;
-  width: 226px;
-}
+
 
 .img-delete {
   height: 2em;

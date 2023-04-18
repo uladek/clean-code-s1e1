@@ -8,7 +8,7 @@
 
 // Event handling, user interaction is what starts the code execution.
 
-var taskInput=document.querySelector(".new-imput-task");//Add a new task.
+var taskInput=document.querySelector(".task_wrapper__new_imput_task");//Add a new task.
 var addButton=document.getElementsByTagName("button")[0];//first button
     addButton.className="btn";
 var incompleteTaskHolder=document.querySelector(".task_wrapper__to_do__to_do_tasks");//ul of #incompleteTasks
@@ -68,7 +68,7 @@ var createNewTaskElement=function(taskString){
 
 var addTask=function(){
     console.log("Add Task...");
-    //Create a new list item with the text from the #new-task:
+    //Create a new list item with the text from the #new_task:
     if (!taskInput.value) return;
     var listItem=createNewTaskElement(taskInput.value);
 
@@ -130,7 +130,7 @@ var deleteTask=function(){
 //Mark task completed
 var taskCompleted = function () {
     console.log("Complete Task...");
-  
+
 
     //Append the task list item to the #completed-tasks
     var listItem=this.parentNode;

@@ -5,25 +5,25 @@
 <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
 </head>
 
-<body class="page">
+<body class="body body_page">
 
-  <header class="urgent_matrix">
-    <img class="urgent_matrix__img"
-    src="./eisenhower-matrix.jpg" alt="Eisenhower matrix picture"> 
-    <a class="urgent_matrix__more_info"
-    href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
+  <header class="header urgent_matrix">
+    <img class="header__img"
+        src="./eisenhower-matrix.jpg" alt="Eisenhower matrix picture"> 
+    <a class="header__more_info"
+        href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
   </header>
 
-  <main class="task_wrapper">
+  <main class="main task_wrapper">
   <!-- <div class="centered-main-page-element"> -->
     <section class="task_wrapper__add_item">  
     <!-- <p id="top-section-for-adding-element-to-list"> -->
-     
-        <h3 class="task_wrapper__title_task first-title">Add Item</h3>
-      <label class = "label-new-task" for="new-task">
+  
+        <h3 class="task_wrapper__add_item__title_task">Add Item</h3>
+      <label class ="task_wrapper__label_new_ask" for="new_task">
       </label>
         <div class="task_wrapper__task_row_wrapper">
-          <input  class="task new-imput-task imput-text" type="text">
+          <input  class="task task_wrapper__new_imput_task imput-text" name="new_task" type="text">
           <!-- <input id="new-task" class="task" type="text"> -->
 
           <button class="brn">Add</button>
@@ -37,12 +37,12 @@
       <ul class="task_wrapper__to_do__to_do_tasks">
     <!-- <ul id="incompleteTasks"></ul> -->
         <li class ="li-item">
-          <input class="imput-checkbox" type='checkbox'>
+          <input class="imput-checkbox" type="checkbox">
           <label class="task li-label">Pay Bills</label>
           <input type="text" class="task imput-text li-imput-text">
           <button class="btn edit">Edit</button>
           <button class="btn delete">
-              <img class="img-delete" src="./remove.svg" alt="Remove icon"></button>
+            <img class="img-delete" src="./remove.svg" alt="Remove icon"></button>
         </li>
         <li class="edit-mode li-item">
           <input type="checkbox" class="imput-checkbox">
@@ -50,7 +50,7 @@
           <input type="text" value="Go Shopping" class="task imput-text li-imput-text edit-mode-text">
           <button class="btn edit">Save</button>
           <button class="btn delete">
-              <img class="img-delete" src="./remove.svg" alt="Remove icon">
+            <img class="img-delete" src="./remove.svg" alt="Remove icon">
           </button>
         </li>
       </ul>
