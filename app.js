@@ -8,7 +8,7 @@
 
 // Event handling, user interaction is what starts the code execution.
 
-var taskInput=document.querySelector(".section_add_item__input_row_wrapper__input");//Add a new task.
+var taskInput=document.querySelector(".section-add-item__input-row-wrapper__input");//Add a new task.
 var addButton=document.getElementsByTagName("button")[0];//first button
     addButton.className="btn";
 var incompleteTaskHolder=document.querySelector(".task_wrapper__to_do__to_do_tasks");//ul of #incompleteTasks
@@ -45,7 +45,7 @@ var createNewTaskElement=function(taskString){
     checkBox.className="imput-checkbox";
 
     editInput.type="text";
-    editInput.className="input_task input_text li-imput-text";
+    editInput.className="input-task input-text li-imput-text";
 
     editButton.innerText="Edit"; //innerText encodes special characters, HTML does not.
     editButton.className = "btn edit";
@@ -89,8 +89,8 @@ var editTask=function(){
 
     var listItem=this.parentNode;
 
-    var editInput=listItem.querySelector('.input_text');
-    editInput.className = "input_task input_text li-imput-text edit-mode-text";
+    var editInput=listItem.querySelector('.input-text');
+    editInput.className = "input-task input-text li-imput-text edit-mode-text";
     var label=listItem.querySelector("label");
     label.className  = "task label-task li-label edit-label";
     var editBtn=listItem.querySelector(".edit");
@@ -103,7 +103,7 @@ var editTask=function(){
         label.innerText=editInput.value;
         editBtn.innerText="Edit";
         label.className="task li-label";
-        editInput.className="input_task input_text li-imput-text";
+        editInput.className="input-task input-text li-imput-text";
     }else{
         editInput.value=label.innerText;
         editBtn.innerText="Save";

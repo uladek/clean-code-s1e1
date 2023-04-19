@@ -1,5 +1,5 @@
 /* Basic Style */
-.body_page{
+.body-page{
   background-color: #f8f8f8;
   color: #333;
   font-family: Lato, sans-serif;
@@ -16,7 +16,7 @@
   width: 100%;
 }
   
-.header__more_info {
+.header__more-info {
   font-family: fantasy, cursive;
 }
   
@@ -35,14 +35,16 @@
 }
   
 .task,
-.input_task 
+.input-task 
 {
   width: 56%;
   display: inline-block;
   flex-grow: 1;
 }
-.section_add_item__input_row_wrapper {
+/* .section_add_item__input_row_wrapper  */
+.section-add-item__input-row-wrapper{
   display: flex;
+  margin-top: 20px;
 }
   
 ul {
@@ -72,9 +74,9 @@ input, button {
   color: #3a3A3a;
 }
   /* Heading */
-.section_add_item__title,
+.section-add-item__title,
 .task_title,
-.section_add_item__label_new_ask {
+.section-add-item__label-new-task {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -88,17 +90,16 @@ input, button {
     margin-top: 20px;
 }
 
-.section_add_item__input_row_wrapper {
-  margin-top: 20px;
-}
+/* .section-add-item__input-row-wrapper {
 
+} */
 
 .li-imput-text {
   display: none;
   width: 226px;
 }
   
-.input_text {
+.input-text {
   /* display: none;
   width: 226px; */
   /* width: 226px; */
@@ -114,7 +115,7 @@ input, button {
   color: #888;
 }
   
-.input_text:focus {
+.input-text:focus {
   color: #333;
 }
   
