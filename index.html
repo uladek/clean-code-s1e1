@@ -5,7 +5,7 @@
 <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
 </head>
 
-<body class="body body_page">
+<body class="body body-page">
 
   <header class="header">
     <img class="header__img"
@@ -38,8 +38,8 @@
           <label class="section-to-do__li-item__label-task task li-label">Pay Bills</label>
           <input  class="section-to-do__li-item__input-task input-task input-text li-imput-text" type="text">
           <button class="section-to-do__li-item__label-task__btn-edit btn edit">Edit</button>
-          <button class="section-to-do__li-item__label-task__btn-delete btn delete">
-            <img class="btn__img-delete img-delete" src="./remove.svg" alt="remove icon"></button>
+          <button class="section-to-do__li-item__label-task__btn-delete btn-delete btn delete">
+            <img class="btn-delete__img-delete img-delete" src="./remove.svg" alt="remove icon"></button>
         </li>
         <li class="section-to-do__edit-mode edit-mode li-item">
           <input  class="section-to-do__edit-mode__input-checkbox imput-checkbox" type="checkbox">
@@ -47,23 +47,23 @@
           <input  class="section-to-do__edit-mode__input-task input-task input-text li-imput-text edit-mode-text" type="text"  value="Go Shopping">
           <button class="section-to-do__edit-mode__btn-edit btn edit">Save</button>
           <button class="section-to-do__edit-mode__btn-delete btn delete">
-            <img class="btn__img-delete img-delete" src="./remove.svg" alt="remove icon">
+            <img class="btn-delete__img-delete img-delete" src="./remove.svg" alt="remove icon">
           </button>
         </li>
       </ul>
     </sectiom> 
 
-    <section class="completed">
-      <h3 class="task-title">Completed</h3>
-        <ul class="completed-tasks">
-      <!-- <ul id="completed-tasks"> -->
-          <li class ="li-item">
-            <input  class="imput-checkbox" type="checkbox" checked>
-            <label class="task li-label completed-label">See the Doctor</label>
-            <input type="text" class="input-task input-text li-imput-text">
-            <button class="btn btn-edit edit">Edit</button>
-            <button class="btn btn-delete delete">
-              <img class="img-delete" src="./remove.svg" alt="Remove icon">
+    <section class="section section-completed">
+      <h3 class="section-completed__title task-title">Completed</h3>
+        <ul class="section-completed__tasks">
+          <!-- <ul class="completed-tasks"> -->
+          <li class="section-completed__tasks__item li-item">
+            <input  class="section-completed__tasks__item__imput-checkbox imput-checkbox" type="checkbox" checked>
+            <label class="section-completed__tasks__item__label task li-label completed-label">See the Doctor</label>
+            <input class="section-completed__tasks__item__input-task input-task input-text li-imput-text" type="text">
+            <button class="section-completed__tasks_btn-edit btn btn-edit edit">Edit</button>
+            <button class="section-completed__tasks_btn-delete btn btn-delete delete">
+              <img class="btn-delete__img-delete img-delete" src="./remove.svg" alt="Remove icon">
             </button>
           </li>
         </ul>
