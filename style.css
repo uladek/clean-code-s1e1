@@ -89,9 +89,6 @@ input, button {
     margin-top: 20px;
 }
 
-/* .section-add-item__input-row-wrapper {
-} */
-
 .li-imput-text {
   display: none;
   width: 226px;
@@ -114,15 +111,9 @@ input, button {
   color: #333;
 }
   
-  /* New Task */
-/* .label-task {
-  display: block;
-  margin: 0 0 20px;
-} */
 .edit-label {
   display: none;
   margin: 0 0 20px;
-
 }
 
 .li-item {

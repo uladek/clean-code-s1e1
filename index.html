@@ -1,8 +1,12 @@
 <!DOCTYPE html>
 <html>
-<head><title>Todo App</title>
-<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
-<link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo App</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" >
 </head>
 
 <body class="body body-page">
@@ -15,9 +19,7 @@
   </header>
 
   <main class="main">
-    <!-- <section class="section section__add_item"> -->
       <section class="section section-add-item">
-
       <h3 class="section-add-item__title">Add Item</h3>
       <label class="section-add-item__label-new-task" for="new-task">
       </label>
@@ -27,12 +29,11 @@
       </div>
     </section>
     
-    <!-- <sectiom class="task_wrapper__to_do"> -->
+    <!-- sectiom to_do -->
     <sectiom class="section section-to-do">
       <h3 class="section-to-do__title task-title">Todo</h3>
       <ul class="section-to-do__tasks">
-
-    <!-- <ul id="incompleteTasks"></ul> -->
+    <!-- incompleteTasks-->
         <li class="section-to-do__li-item li-item">
           <input class="section-to-do__li-item__imput-checkbox imput-checkbox" type="checkbox">
           <label class="section-to-do__li-item__label-task task li-label">Pay Bills</label>
@@ -56,14 +57,14 @@
     <section class="section section-completed">
       <h3 class="section-completed__title task-title">Completed</h3>
         <ul class="section-completed__tasks">
-          <!-- <ul class="completed-tasks"> -->
+          <!--completed-tasks-->
           <li class="section-completed__tasks__item li-item">
             <input  class="section-completed__tasks__item__imput-checkbox imput-checkbox" type="checkbox" checked>
             <label class="section-completed__tasks__item__label task li-label completed-label">See the Doctor</label>
             <input class="section-completed__tasks__item__input-task input-task input-text li-imput-text" type="text">
             <button class="section-completed__tasks_btn-edit btn btn-edit edit">Edit</button>
             <button class="section-completed__tasks_btn-delete btn btn-delete delete">
-              <img class="btn-delete__img-delete img-delete" src="./remove.svg" alt="Remove icon">
+              <img class="btn-delete__img-delete img-delete" src="./remove.svg" alt="remove icon">
             </button>
           </li>
         </ul>
