@@ -28,19 +28,20 @@
   
 }
 
-.task_wrapper {
+.main {
   display: block;
   width: 500px;
   margin: 0 auto 0;
 }
   
-.task {
+.task,
+.input_task 
+{
   width: 56%;
   display: inline-block;
   flex-grow: 1;
 }
-  
-.task_wrapper__task_row_wrapper {
+.section_add_item__input_row_wrapper {
   display: flex;
 }
   
@@ -71,9 +72,9 @@ input, button {
   color: #3a3A3a;
 }
   /* Heading */
-.task_wrapper__add_item__title_task,
+.section_add_item__title,
 .task_title,
-.task_wrapper__label_new_task {
+.section_add_item__label_new_ask {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -83,11 +84,11 @@ input, button {
   text-transform: uppercase;
 }
 
-.task_wrapper__add_item {
+.section__add_item {
     margin-top: 20px;
 }
 
-.task_wrapper__task_row_wrapper {
+.section_add_item__input_row_wrapper {
   margin-top: 20px;
 }
 
@@ -97,7 +98,7 @@ input, button {
   width: 226px;
 }
   
-.imput-text {
+.input_text {
   /* display: none;
   width: 226px; */
   /* width: 226px; */
@@ -113,7 +114,7 @@ input, button {
   color: #888;
 }
   
-.imput_text:focus {
+.input_text:focus {
   color: #333;
 }
   
