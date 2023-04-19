@@ -23,38 +23,38 @@
       </label>
       <div class="section-add-item__input-row-wrapper">
         <input class="input-task section-add-item__input-row-wrapper__input input-text" name="new-task" type="text">
-        <button class="brn section_add_item__btn">Add</button>
+        <button class="btn section-add-item__btn">Add</button>
       </div>
     </section>
     
-    <sectiom class="task_wrapper__to_do">
+    <!-- <sectiom class="task_wrapper__to_do"> -->
+    <sectiom class="section section-to-do">
+      <h3 class="section-to-do__title task-title">Todo</h3>
+      <ul class="section-to-do__tasks">
 
-      <h3 class="task_title">Todo</h3>
-
-      <ul class="task_wrapper__to_do__to_do_tasks">
     <!-- <ul id="incompleteTasks"></ul> -->
-        <li class ="li-item">
-          <input class="imput-checkbox" type="checkbox">
-          <label class="task li-label">Pay Bills</label>
-          <input type="text" class="input-task input-text li-imput-text">
-          <button class="btn edit">Edit</button>
-          <button class="btn delete">
-            <img class="img-delete" src="./remove.svg" alt="Remove icon"></button>
+        <li class="section-to-do__li-item li-item">
+          <input class="section-to-do__li-item__imput-checkbox imput-checkbox" type="checkbox">
+          <label class="section-to-do__li-item__label-task task li-label">Pay Bills</label>
+          <input  class="section-to-do__li-item__input-task input-task input-text li-imput-text" type="text">
+          <button class="section-to-do__li-item__label-task__btn-edit btn edit">Edit</button>
+          <button class="section-to-do__li-item__label-task__btn-delete btn delete">
+            <img class="btn__img-delete img-delete" src="./remove.svg" alt="remove icon"></button>
         </li>
-        <li class="edit-mode li-item">
-          <input type="checkbox" class="imput-checkbox">
-          <label class="task label-task li-label edit-label">Go Shopping</label>
-          <input type="text" value="Go Shopping" class="input-task input-text li-imput-text edit-mode-text">
-          <button class="btn edit">Save</button>
-          <button class="btn delete">
-            <img class="img-delete" src="./remove.svg" alt="Remove icon">
+        <li class="section-to-do__edit-mode edit-mode li-item">
+          <input  class="section-to-do__edit-mode__input-checkbox imput-checkbox" type="checkbox">
+          <label class="section-to-do__edit-mode__label task li-label edit-label">Go Shopping</label>
+          <input  class="section-to-do__edit-mode__input-task input-task input-text li-imput-text edit-mode-text" type="text"  value="Go Shopping">
+          <button class="section-to-do__edit-mode__btn-edit btn edit">Save</button>
+          <button class="section-to-do__edit-mode__btn-delete btn delete">
+            <img class="btn__img-delete img-delete" src="./remove.svg" alt="remove icon">
           </button>
         </li>
       </ul>
     </sectiom> 
 
     <section class="completed">
-      <h3 class="task_title">Completed</h3>
+      <h3 class="task-title">Completed</h3>
         <ul class="completed-tasks">
       <!-- <ul id="completed-tasks"> -->
           <li class ="li-item">
