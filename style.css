@@ -35,13 +35,14 @@
 }
   
 .task,
+.section__input,
 .input-task {
   width: 56%;
   display: inline-block;
   flex-grow: 1;
 }
 
-.section-add-item__input-row-wrapper{
+.section__row-wrapper{
   display: flex;
   margin-top: 20px;
 }
@@ -54,11 +55,12 @@ ul {
 li, h3 {
   list-style: none;
 }
-  
+
 input, button {
   outline: none;
 }
-  
+
+.section__row-wrapper__add-btn,
 .btn {
   background: none;
   border: 0px;
@@ -69,6 +71,7 @@ input, button {
   cursor: pointer;
 }
   
+.section__row-wrapper__add-btn,
 .btn:hover {
   color: #3a3A3a;
 }
@@ -93,7 +96,8 @@ input, button {
   display: none;
   width: 226px;
 }
-  
+
+.section__input_text,
 .input-text {
   margin: 0;
   font-size: 18px;
@@ -116,6 +120,7 @@ input, button {
   margin: 0 0 20px;
 }
 
+.section_to-do__li-item,
 .li-item {
   overflow: hidden;
   padding: 20px 0;

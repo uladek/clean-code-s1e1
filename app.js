@@ -8,9 +8,9 @@
 
 // Event handling, user interaction is what starts the code execution.
 
-var taskInput=document.querySelector(".section-add-item__input-row-wrapper__input");//Add a new task.
+var taskInput=document.querySelector(".input-add-item");//Add a new task.
 var addButton=document.getElementsByTagName("button")[0];//first button
-    addButton.className="btn";
+    addButton.className="section__row-wrapper__add-btn";
 var incompleteTaskHolder=document.querySelector(".section-to-do__tasks");//ul of #incompleteTasks
 var completedTasksHolder=document.querySelector(".section-completed__tasks");//completed-tasks
 // var completedInput=document.querySelector(".section-add-item__input-row-wrapper__input");//Add a new task.
@@ -21,7 +21,7 @@ var createNewTaskElement=function(taskString){
 
     var listItem=document.createElement("li");
     // listItem.className = "li-item";
-    listItem.className = "section-to-do__li-item li-item";
+    listItem.className = "section_to-do__li-item li-item";
 
     
 
@@ -48,7 +48,7 @@ var createNewTaskElement=function(taskString){
     checkBox.className="imput-checkbox";
 
     editInput.type="text";
-    editInput.className="input-task input-text li-imput-text";
+    editInput.className="input-task section__input_input-text input-text li-imput-text";
 
     editButton.innerText="Edit"; //innerText encodes special characters, HTML does not.
     editButton.className = "btn edit";
@@ -92,7 +92,7 @@ var editTask = function () {
     var listItem=this.parentNode;
 
     var editInput=listItem.querySelector(".input-text");
-    editInput.className = "input-task input-text li-imput-text edit-mode-text";
+    editInput.className = "input-task section__input_input-text input-text li-imput-text edit-mode-text";
     var label=listItem.querySelector("label");
     label.className = "task li-label  edit-label";
     var editBtn=listItem.querySelector(".edit");
@@ -105,7 +105,7 @@ var editTask = function () {
         label.innerText=editInput.value;
         editBtn.innerText="Edit";
         label.className="task li-label";
-        editInput.className="input-task input-text li-imput-text";
+        editInput.className="input-task section__input_input-text input-text li-imput-text";
     }else{
         editInput.value=label.innerText;
         editBtn.innerText="Save";
