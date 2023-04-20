@@ -90,11 +90,14 @@ var editTask = function () {
     var listItem=this.parentNode;
 
     var editInput=listItem.querySelector(".input-text");
-    editInput.className = "input-task section__input_input-text input-text li-imput-text edit-mode-text";
+    editInput.className = "section__input-task section__input-task section__input_size section__input_node-text   input-task input-text li-imput-text edit-mode-text";
+    //todo del input-task input-text li-imput-text edit-mode-text
     var label=listItem.querySelector("label");
-    label.className = "task li-label  edit-label";
+    label.className = "section__label-task section__label-task_size section__label-task_edit task li-label  edit-label"; //todo del task li-label  edit-label
     var editBtn=listItem.querySelector(".edit");
-    var containsClass=listItem.classList.contains("edit-mode");
+    var containsClass=listItem.classList.contains("section__edit-node");//todo del edit-mode
+    // var containsClass=listItem.classList.contains("edit-mode");//todo del edit-mode
+
     //If class of the parent is .editmode
     if(containsClass){
 
@@ -102,15 +105,18 @@ var editTask = function () {
         //label becomes the inputs value.
         label.innerText=editInput.value;
         editBtn.innerText="Edit";
-        label.className="task li-label";
-        editInput.className="input-task section__input_input-text input-text li-imput-text";
+        label.className="section__label-task section__label-task_size task li-label";//todo del task li-label
+        editInput.className="section__input-task section__input-task section__input_size   input-task  input-text li-imput-text";
+        //todo del input-task  input-text li-imput-text
     }else{
         editInput.value=label.innerText;
         editBtn.innerText="Save";
     }
 
     //toggle .editmode on the parent.
-    listItem.classList.toggle("edit-mode");
+    listItem.classList.toggle("section__edit-node");
+    // listItem.classList.toggle("edit-mode");
+
    
 };
 

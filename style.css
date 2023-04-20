@@ -106,8 +106,8 @@ input, button {
   line-height: 18px;
   height: 21px;
   padding: 0 9px;
-  border: 1px solid #dDd;
-  background: #FFF;
+  border: 1px solid #ddd;
+  background: #fff;
   border-radius: 6px;
   font-family: Lato, sans-serif;
   color: #888;
@@ -117,7 +117,8 @@ input, button {
   color: #333;
 }
   
-.edit-label {
+.edit-label,
+.section__label-task_edit  {
   display: none;
   margin: 0 0 20px;
 }
@@ -133,6 +134,7 @@ input, button {
 }
 
 .imput-checkbox,
+.section__edit__input-checkbox,
 .section__imput-checkbox {
   margin: 0 10px;
 }
@@ -172,7 +174,8 @@ input, button {
 }
   
   /* Edit Task */
-.edit-mode-text {
+.edit-mode-text,
+.section__input_node-text {
   display: inline-block;
   width: 224px;
 }
