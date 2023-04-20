@@ -8,11 +8,11 @@
 
 // Event handling, user interaction is what starts the code execution.
 
-var taskInput=document.querySelector(".input-add-item");//Add a new task.
+var taskInput=document.querySelector(".section__input_add-item");//Add a new task.
 var addButton=document.getElementsByTagName("button")[0];//first button
     addButton.className="section__row-wrapper__add-btn";
 var incompleteTaskHolder=document.querySelector(".section-to-do__tasks");//ul of #incompleteTasks
-var completedTasksHolder=document.querySelector(".section-completed__tasks");//completed-tasks
+var completedTasksHolder=document.querySelector(".section__completed-tasks");//completed-tasks
 // var completedInput=document.querySelector(".section-add-item__input-row-wrapper__input");//Add a new task.
 
 
@@ -21,9 +21,7 @@ var createNewTaskElement=function(taskString){
 
     var listItem=document.createElement("li");
     // listItem.className = "li-item";
-    listItem.className = "section_to-do__li-item li-item";
-
-    
+    listItem.className = "section__li-item li-item";
 
     //input (checkbox)
     var checkBox=document.createElement("input");//checkbx
@@ -38,22 +36,22 @@ var createNewTaskElement=function(taskString){
     var deleteButton=document.createElement("button");//delete button
    
     var deleteButtonImg=document.createElement("img");//delete button image
-    deleteButtonImg.className = "img-delete";
+    deleteButtonImg.className = "btn-delete__img-delete img-delete";// todo del img-delete
 
     label.innerText=taskString;
-    label.className="task li-label";
+    label.className="section__label-task section__label-task_size task li-label"; // todo del task li-label
 
     //Each elements, needs appending
     checkBox.type="checkbox";
-    checkBox.className="imput-checkbox";
+    checkBox.className="section__imput-checkbox imput-checkbox"; // todo del imput-checkbox
 
     editInput.type="text";
-    editInput.className="input-task section__input_input-text input-text li-imput-text";
+    editInput.className="input-task section__input-task section__input_text input-task input-text li-imput-text"; // todo del imput-text input-task li-imput-tex
 
     editButton.innerText="Edit"; //innerText encodes special characters, HTML does not.
-    editButton.className = "btn edit";
+    editButton.className = "btn btn-edit  edit"; //todo del edit
 
-    deleteButton.className = "btn delete";
+    deleteButton.className = "btn-delete  btn delete"; //todo del delete
     deleteButtonImg.src="./remove.svg";
     deleteButton.appendChild(deleteButtonImg);
 
@@ -172,7 +170,7 @@ addButton.addEventListener("click",ajaxRequest);
 var bindTaskEvents=function(taskListItem,checkBoxEventHandler){
     console.log("bind list item events");
 //select ListItems children
-    var checkBox=taskListItem.querySelector(".imput-checkbox");
+    var checkBox=taskListItem.querySelector(".imput-checkbox"); //todo ??
     var editButton=taskListItem.querySelector(".edit");
     var deleteButton=taskListItem.querySelector(".delete");
 

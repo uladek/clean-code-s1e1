@@ -23,7 +23,7 @@
       <label class="section__label-new-task" for="new-task">
       </label>
       <div class="section__row-wrapper">
-        <input class="section__input input-add-item section__input_text" name="new-task" type="text">
+        <input class="section__input section__input_add-item section__input_text" name="new-task" type="text">
         <button class="section__row-wrapper__add-btn">Add</button>
       </div>
     </section>
@@ -33,13 +33,20 @@
       <h3 class="task-title">Todo</h3>
       <ul class="section-to-do__tasks">
     <!-- incompleteTasks-->
-        <li class="section-to-do__li-item li-item">
-          <input class="section-to-do__li-item__imput-checkbox imput-checkbox" type="checkbox">
-          <label class="section-to-do__li-item__label-task task li-label">Pay Bills</label>
-          <input class="section-to-do__li-item__input-task input-task input-text li-imput-text" type="text">
-          <button class="section-to-do__li-item__label-task__btn-edit btn edit">Edit</button>
-          <button class="section-to-do__li-item__label-task__btn-delete btn-delete btn delete">
+        <li class="section__li-item li-item">
+          <input class="section__imput-checkbox imput-checkbox" type="checkbox">
+          <!-- todo del imput-checkbox -->
+          <label class="section__label-task section__label-task_size task li-label">Pay Bills</label>
+           <!-- todo del task li-label-->
+          <input class="section__input-task section__input-task section__input_size
+          input-task input-text li-imput-text" type="text">
+            <!-- todo del input-task input-text li-imput-text-->
+          <button class="section__btn-edit btn btn-edit edit">Edit</button>
+                      <!-- todo del edit-->
+          <button class="section__btn-delete btn-delete btn delete">
+              <!-- todo del delete-->
             <img class="btn-delete__img-delete img-delete" src="./remove.svg" alt="remove icon"></button>
+             <!-- todo del img-delete-->
         </li>
         <li class="section-to-do__edit-mode edit-mode li-item">
           <input class="section-to-do__edit-mode__input-checkbox imput-checkbox" type="checkbox">
@@ -55,11 +62,11 @@
 
     <section class="section section_completed">
       <h3 class="task-title">Completed</h3>
-        <ul class="section-completed__tasks">
+        <ul class="section__completed-tasks">
           <!--completed-tasks-->
           <li class="section-completed__tasks__item li-item">
             <input  class="section-completed__tasks__item__imput-checkbox imput-checkbox" type="checkbox" checked>
-            <label class="section-completed__tasks__item__label task li-label completed-label">See the Doctor</label>
+            <label class=" task completed-tasks li-label">See the Doctor</label>
             <input class="section-completed__tasks__item__input-task input-task input-text li-imput-text" type="text">
             <button class="section-completed__tasks_btn-edit btn btn-edit edit">Edit</button>
             <button class="section-completed__tasks_btn-delete btn btn-delete delete">
