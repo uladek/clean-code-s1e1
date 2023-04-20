@@ -48,7 +48,7 @@
             <img class="btn-delete__img-delete img-delete" src="./remove.svg" alt="remove icon"></button>
              <!-- todo del img-delete-->
         </li>
-        <li class="section__edit-node li-item">
+        <li class="section__li-item section__li-item__edit-node li-item">
           <input class="section__input-checkbox imput-checkbox" type="checkbox">
             <!-- todo del imput-checkbox -->
           <label class="section__label-task section__label-task_size section__label-task_edit  task li-label edit-label">Go Shopping</label>
@@ -70,13 +70,22 @@
       <h3 class="task-title">Completed</h3>
         <ul class="section__completed-tasks">
           <!--completed-tasks-->
-          <li class="section-completed__tasks__item li-item">
-            <input  class="section-completed__tasks__item__imput-checkbox imput-checkbox" type="checkbox" checked>
-            <label class=" task completed-tasks li-label">See the Doctor</label>
-            <input class="section-completed__tasks__item__input-task input-task input-text li-imput-text" type="text">
-            <button class="section-completed__tasks_btn-edit btn btn-edit edit">Edit</button>
-            <button class="section-completed__tasks_btn-delete btn btn-delete delete">
+          <li class="section__li-item section__li-item_completed li-item">
+            <input  class="section__imput-checkbox imput-checkbox" type="checkbox" checked>
+                        <!-- todo del imput-checkbox -->
+            <label class="section__label-task section__label-task_size  task li-label">See the Doctor</label>
+            <!-- <label class="section__label-task section__label-task_size  section__label-task_completed task  li-label">See the Doctor</label> -->
+             <!-- todo del task li-label  completed-tasks-->
+            <!-- <input class="section__input-task  section__input_size  input-task input-text li-imput-text" type="text"> -->
+            <input class="section__input-task section__input-task section__input_size
+                   input-task input-text li-imput-text" type="text">
+                     <!-- todo del input-task input-text li-imput-text-->       
+            <button class="section_btn-edit btn btn-edit edit">Edit</button>
+                        <!-- todo del edit-->
+            <button class="section__btn-delete btn btn-delete delete">
+                             <!-- todo del img-delete-->
               <img class="btn-delete__img-delete img-delete" src="./remove.svg" alt="remove icon">
+               <!-- todo del img-delete-->
             </button>
           </li>
         </ul>

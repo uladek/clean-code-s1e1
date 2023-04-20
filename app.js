@@ -13,6 +13,7 @@ var addButton=document.getElementsByTagName("button")[0];//first button
     addButton.className="section__row-wrapper__add-btn";
 var incompleteTaskHolder=document.querySelector(".section-to-do__tasks");//ul of #incompleteTasks
 var completedTasksHolder=document.querySelector(".section__completed-tasks");//completed-tasks
+
 // var completedInput=document.querySelector(".section-add-item__input-row-wrapper__input");//Add a new task.
 
 
@@ -21,7 +22,7 @@ var createNewTaskElement=function(taskString){
 
     var listItem=document.createElement("li");
     // listItem.className = "li-item";
-    listItem.className = "section__li-item li-item";
+    listItem.className = "section__li-item li-item";// todo del li-item ?
 
     //input (checkbox)
     var checkBox=document.createElement("input");//checkbx
@@ -93,9 +94,9 @@ var editTask = function () {
     editInput.className = "section__input-task section__input-task section__input_size section__input_node-text   input-task input-text li-imput-text edit-mode-text";
     //todo del input-task input-text li-imput-text edit-mode-text
     var label=listItem.querySelector("label");
-    label.className = "section__label-task section__label-task_size section__label-task_edit task li-label  edit-label"; //todo del task li-label  edit-label
+    label.className = "section__label-task section__label-task_size section__label-task_edit  task li-label edit-label"; //todo del task li-label  edit-label
     var editBtn=listItem.querySelector(".edit");
-    var containsClass=listItem.classList.contains("section__edit-node");//todo del edit-mode
+    var containsClass=listItem.classList.contains("section__li-item__edit-node");//todo del edit-mode
     // var containsClass=listItem.classList.contains("edit-mode");//todo del edit-mode
 
     //If class of the parent is .editmode
@@ -106,7 +107,7 @@ var editTask = function () {
         label.innerText=editInput.value;
         editBtn.innerText="Edit";
         label.className="section__label-task section__label-task_size task li-label";//todo del task li-label
-        editInput.className="section__input-task section__input-task section__input_size   input-task  input-text li-imput-text";
+        editInput.className="section__input-task section__input-task section__input_size  input-task  input-text li-imput-text";
         //todo del input-task  input-text li-imput-text
     }else{
         editInput.value=label.innerText;
@@ -114,7 +115,7 @@ var editTask = function () {
     }
 
     //toggle .editmode on the parent.
-    listItem.classList.toggle("section__edit-node");
+    listItem.classList.toggle("section__li-item__edit-node");
     // listItem.classList.toggle("edit-mode");
 
    
@@ -176,6 +177,8 @@ addButton.addEventListener("click",ajaxRequest);
 var bindTaskEvents=function(taskListItem,checkBoxEventHandler){
     console.log("bind list item events");
 //select ListItems children
+
+    // var checkBox=taskListItem.querySelector(".section__input-checkbox"); //todo ??
     var checkBox=taskListItem.querySelector(".imput-checkbox"); //todo ??
     var editButton=taskListItem.querySelector(".edit");
     var deleteButton=taskListItem.querySelector(".delete");
