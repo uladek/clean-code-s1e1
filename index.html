@@ -6,11 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Todo App</title>
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" >
+  <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="body body-page">
-
+<body class="body">
   <header class="header">
     <img class="header__img"
         src="./eisenhower-matrix.jpg" alt="Eisenhower matrix picture"> 
@@ -19,8 +18,8 @@
   </header>
 
   <main class="main">
-      <section class="section section-add-item">
-      <h3 class="section-add-item__title">Add Item</h3>
+    <section class="section section_add-item">
+      <h3 class="task-title">Add Item</h3>
       <label class="section-add-item__label-new-task" for="new-task">
       </label>
       <div class="section-add-item__input-row-wrapper">
@@ -30,22 +29,22 @@
     </section>
     
     <!-- sectiom to_do -->
-    <sectiom class="section section-to-do">
-      <h3 class="section-to-do__title task-title">Todo</h3>
+    <sectiom class="section section_to-do">
+      <h3 class="task-title">Todo</h3>
       <ul class="section-to-do__tasks">
     <!-- incompleteTasks-->
         <li class="section-to-do__li-item li-item">
           <input class="section-to-do__li-item__imput-checkbox imput-checkbox" type="checkbox">
           <label class="section-to-do__li-item__label-task task li-label">Pay Bills</label>
-          <input  class="section-to-do__li-item__input-task input-task input-text li-imput-text" type="text">
+          <input class="section-to-do__li-item__input-task input-task input-text li-imput-text" type="text">
           <button class="section-to-do__li-item__label-task__btn-edit btn edit">Edit</button>
           <button class="section-to-do__li-item__label-task__btn-delete btn-delete btn delete">
             <img class="btn-delete__img-delete img-delete" src="./remove.svg" alt="remove icon"></button>
         </li>
         <li class="section-to-do__edit-mode edit-mode li-item">
-          <input  class="section-to-do__edit-mode__input-checkbox imput-checkbox" type="checkbox">
+          <input class="section-to-do__edit-mode__input-checkbox imput-checkbox" type="checkbox">
           <label class="section-to-do__edit-mode__label task li-label edit-label">Go Shopping</label>
-          <input  class="section-to-do__edit-mode__input-task input-task input-text li-imput-text edit-mode-text" type="text"  value="Go Shopping">
+          <input class="section-to-do__edit-mode__input-task input-task input-text li-imput-text edit-mode-text" type="text"  value="Go Shopping">
           <button class="section-to-do__edit-mode__btn-edit btn edit">Save</button>
           <button class="section-to-do__edit-mode__btn-delete btn delete">
             <img class="btn-delete__img-delete img-delete" src="./remove.svg" alt="remove icon">
@@ -54,8 +53,8 @@
       </ul>
     </sectiom> 
 
-    <section class="section section-completed">
-      <h3 class="section-completed__title task-title">Completed</h3>
+    <section class="section section_completed">
+      <h3 class="task-title">Completed</h3>
         <ul class="section-completed__tasks">
           <!--completed-tasks-->
           <li class="section-completed__tasks__item li-item">

@@ -13,13 +13,17 @@ var addButton=document.getElementsByTagName("button")[0];//first button
     addButton.className="btn";
 var incompleteTaskHolder=document.querySelector(".section-to-do__tasks");//ul of #incompleteTasks
 var completedTasksHolder=document.querySelector(".section-completed__tasks");//completed-tasks
+// var completedInput=document.querySelector(".section-add-item__input-row-wrapper__input");//Add a new task.
 
 
 //New task list item
 var createNewTaskElement=function(taskString){
 
     var listItem=document.createElement("li");
-    listItem.className ="li-item";
+    // listItem.className = "li-item";
+    listItem.className = "section-to-do__li-item li-item";
+
+    
 
     //input (checkbox)
     var checkBox=document.createElement("input");//checkbx
@@ -50,9 +54,8 @@ var createNewTaskElement=function(taskString){
     editButton.className = "btn edit";
 
     deleteButton.className = "btn delete";
-    deleteButtonImg.src='./remove.svg';
+    deleteButtonImg.src="./remove.svg";
     deleteButton.appendChild(deleteButtonImg);
-   
 
     //and appending.
     listItem.appendChild(checkBox);
@@ -65,7 +68,7 @@ var createNewTaskElement=function(taskString){
 
 
 
-var addTask=function(){
+var addTask = function () {
     console.log("Add Task...");
     //Create a new list item with the text from the #new_task:
     if (!taskInput.value) return;
@@ -81,14 +84,14 @@ var addTask=function(){
 
 //Edit an existing task.
 
-var editTask=function(){
+var editTask = function () {
     console.log("Edit Task...");
     console.log("Change 'edit' to 'save'");
 
 
     var listItem=this.parentNode;
 
-    var editInput=listItem.querySelector('.input-text');
+    var editInput=listItem.querySelector(".input-text");
     editInput.className = "input-task input-text li-imput-text edit-mode-text";
     var label=listItem.querySelector("label");
     label.className = "task li-label  edit-label";
@@ -136,7 +139,6 @@ var taskCompleted = function () {
     completedTasksHolder.appendChild(listItem);
 
     bindTaskEvents(listItem, taskIncomplete);
-  
 }
 
 

@@ -1,11 +1,11 @@
 /* Basic Style */
-.body-page{
+.body{
   background-color: #f8f8f8;
   color: #333;
   font-family: Lato, sans-serif;
 }
 
-.header  {
+.header {
   width: 500px;
   margin: 0 auto;
   display: block;
@@ -40,7 +40,7 @@
   display: inline-block;
   flex-grow: 1;
 }
-/* .section_add_item__input_row_wrapper  */
+
 .section-add-item__input-row-wrapper{
   display: flex;
   margin-top: 20px;
@@ -73,9 +73,9 @@ input, button {
   color: #3a3A3a;
 }
   /* Heading */
-.section-add-item__title,
-.task-title,
-.section-add-item__label-new-task {
+  /* .section-add-item__label-new-task,
+.section-add-item__title, */
+.task-title {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -85,9 +85,9 @@ input, button {
   text-transform: uppercase;
 }
 
-.section__add_item {
+/* .section_add-item {
     margin-top: 20px;
-}
+} */
 
 .li-imput-text {
   display: none;
@@ -147,7 +147,8 @@ input, button {
 }
   
   /* Completed */
-.section-completed__tasks .li-label {
+/* .section-completed__tasks .li-label */
+.completed-label {
   text-decoration: line-through;
   color: #888;
 }
