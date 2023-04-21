@@ -22,7 +22,7 @@ var createNewTaskElement=function(taskString){
 
     var listItem=document.createElement("li");
     // listItem.className = "li-item";
-    listItem.className = "section__li-item li-item";// todo del li-item ?
+    listItem.className = "section__li-item li-item";
 
     //input (checkbox)
     var checkBox=document.createElement("input");//checkbx
@@ -37,23 +37,23 @@ var createNewTaskElement=function(taskString){
     var deleteButton=document.createElement("button");//delete button
    
     var deleteButtonImg=document.createElement("img");//delete button image
-    deleteButtonImg.className = "btn-delete__img-delete img-delete";// todo del img-delete
+    deleteButtonImg.className = "btn_delete__img-delete";
 
     label.innerText=taskString;
-    label.className="section__label-task section__label-task_size task li-label"; // todo del task li-label
+    label.className="section__label-task section__label-task_size"; 
 
     //Each elements, needs appending
     checkBox.type="checkbox";
-    checkBox.className="section__imput-checkbox imput-checkbox"; // todo del imput-checkbox
+    checkBox.className="section__imput-checkbox"; // todo del imput-checkbox
 
-    editInput.type="text";
-    editInput.className="input-task section__input-task section__input_text input-task input-text li-imput-text"; // todo del imput-text input-task li-imput-tex
+    editInput.type = "text";
+    editInput.className = "section__input-task section__input_text section__input_size";
 
-    editButton.innerText="Edit"; //innerText encodes special characters, HTML does not.
-    editButton.className = "btn btn-edit  edit"; //todo del edit
+    editButton.innerText = "Edit"; //innerText encodes special characters, HTML does not.
+    editButton.className = "btn btn_edit"; 
 
-    deleteButton.className = "btn-delete  btn delete"; //todo del delete
-    deleteButtonImg.src="./remove.svg";
+    deleteButton.className = "btn_delete btn";
+    deleteButtonImg.src = "./remove.svg";
     deleteButton.appendChild(deleteButtonImg);
 
     //and appending.
@@ -90,14 +90,17 @@ var editTask = function () {
 
     var listItem=this.parentNode;
 
-    var editInput=listItem.querySelector(".input-text");
-    editInput.className = "section__input-task section__input-task section__input_size section__input_node-text   input-task input-text li-imput-text edit-mode-text";
-    //todo del input-task input-text li-imput-text edit-mode-text
+    // var editInput=listItem.querySelector(".input-text");
+    var editInput=listItem.querySelector(".section__input_text");
+
+    editInput.className = "section__input-task section__input_text section__input_size section__input_node-text";
     var label=listItem.querySelector("label");
-    label.className = "section__label-task section__label-task_size section__label-task_edit  task li-label edit-label"; //todo del task li-label  edit-label
-    var editBtn=listItem.querySelector(".edit");
-    var containsClass=listItem.classList.contains("section__li-item__edit-node");//todo del edit-mode
-    // var containsClass=listItem.classList.contains("edit-mode");//todo del edit-mode
+    label.className = "section__label-task section__label-task_size section__label-task_edit"; 
+    // var editBtn=listItem.querySelector(".edit");
+    var editBtn=listItem.querySelector(".btn_edit");
+
+    var containsClass=listItem.classList.contains("section__li-item__edit-node");
+    // var containsClass=listItem.classList.contains("edit-mode");
 
     //If class of the parent is .editmode
     if(containsClass){
@@ -106,9 +109,8 @@ var editTask = function () {
         //label becomes the inputs value.
         label.innerText=editInput.value;
         editBtn.innerText="Edit";
-        label.className="section__label-task section__label-task_size task li-label";//todo del task li-label
-        editInput.className="section__input-task section__input-task section__input_size  input-task  input-text li-imput-text";
-        //todo del input-task  input-text li-imput-text
+        label.className="section__label-task section__label-task_size";
+        editInput.className="section__input-task section__input_text section__input_size";
     }else{
         editInput.value=label.innerText;
         editBtn.innerText="Save";
@@ -118,7 +120,6 @@ var editTask = function () {
     listItem.classList.toggle("section__li-item__edit-node");
     // listItem.classList.toggle("edit-mode");
 
-   
 };
 
 
@@ -155,14 +156,12 @@ var taskIncomplete=function(){
     var listItem=this.parentNode;
     incompleteTaskHolder.appendChild(listItem);
     bindTaskEvents(listItem,taskCompleted);
-   
 }
 
 
 
 var ajaxRequest=function(){
     console.log("AJAX Request");
- 
 }
 
 //The glue to hold it all together.
@@ -177,11 +176,10 @@ addButton.addEventListener("click",ajaxRequest);
 var bindTaskEvents=function(taskListItem,checkBoxEventHandler){
     console.log("bind list item events");
 //select ListItems children
-
-    // var checkBox=taskListItem.querySelector(".section__input-checkbox"); //todo ??
-    var checkBox=taskListItem.querySelector(".imput-checkbox"); //todo ??
-    var editButton=taskListItem.querySelector(".edit");
-    var deleteButton=taskListItem.querySelector(".delete");
+    var checkBox=taskListItem.querySelector(".section__imput-checkbox"); //todo ??
+    // var checkBox=taskListItem.querySelector(".imput-checkbox"); //todo ??
+    var editButton=taskListItem.querySelector(".btn_edit");
+    var deleteButton=taskListItem.querySelector(".btn_delete");
 
 
     //Bind editTask to edit button.
@@ -201,7 +199,6 @@ for (var i=0; i<incompleteTaskHolder.children.length;i++){
 
     //bind events to list items chldren(tasksCompleted)
     bindTaskEvents(incompleteTaskHolder.children[i],taskCompleted);
-   
 }
 
 
@@ -211,10 +208,7 @@ for (var i=0; i<incompleteTaskHolder.children.length;i++){
 for (var i=0; i<completedTasksHolder.children.length;i++){
     //bind events to list items chldren(tasksIncompleted)
     bindTaskEvents(completedTasksHolder.children[i],taskIncomplete);
-
 }
-
-
 
 
 // Issues with usability don't get seen until they are in front of a human tester.
