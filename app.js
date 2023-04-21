@@ -44,7 +44,7 @@ var createNewTaskElement=function(taskString){
 
     //Each elements, needs appending
     checkBox.type="checkbox";
-    checkBox.className="section__imput-checkbox"; // todo del imput-checkbox
+    checkBox.className="section__imput-checkbox";
 
     editInput.type = "text";
     editInput.className = "section__input-task section__input_text section__input_size";

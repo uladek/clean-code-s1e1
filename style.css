@@ -78,9 +78,8 @@ input, button {
 .btn:hover {
   color: #3a3A3a;
 }
+
   /* Heading */
-  /* .section-add-item__label-new-task,
-.section-add-item__title, */
 .task-title {
   color: #333;
   font-weight: 700;
@@ -90,7 +89,6 @@ input, button {
   margin: 0;
   text-transform: uppercase;
 }
-
 
 /* .li-imput-text */
 .section__input_size {
@@ -158,18 +156,7 @@ input, button {
 }
   
   /* Completed */
-/* .section-completed__tasks .li-label
-.completed-label {
-  text-decoration: line-through;
-  color: #888;
-} */
-
-
-/* //todo rename li-label */
-/* section__label-task_size */
-/* .section__completed-tasks .li-label { */
 .section__completed-tasks .section__label-task_size {
-
   text-decoration: line-through;
   color: #888;
 }
