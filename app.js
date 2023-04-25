@@ -21,11 +21,10 @@ var completedTasksHolder=document.querySelector(".section__completed-tasks");//c
 var createNewTaskElement=function(taskString){
 
     var listItem=document.createElement("li");
-    // listItem.className = "li-item";
     listItem.className = "section__li-item li-item";
 
     //input (checkbox)
-    var checkBox=document.createElement("input");//checkbx
+    var checkBox=document.createElement("input");
     //label
     var label=document.createElement("label");//label
     //input (text)
